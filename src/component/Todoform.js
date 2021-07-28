@@ -24,7 +24,7 @@ function Todoform() {
             <h1>ToDo List!</h1>
             <div className='form-innerdiv'>
                 <form onSubmit={handleonsubmit} className='form-submit'>
-                    <input type='text' placeholder="Enter Note..." value={input} onChange={handleonchange}/>
+                    <input type='text' placeholder="Enter Note..." required  onChange={handleonchange}/>
                     <button><i className="fas fa-plus"/></button>
                 </form>
                 <Todolist todo={todo} setTodo={setTodo}/>

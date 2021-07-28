@@ -3,7 +3,7 @@ import Todolist from './Todolist'
 import '../component/Todoform.css';
 
 function Todoform() {
-    const [input , setInput] = useState(" ")
+    const [input , setInput] = useState("")
     const [todo , setTodo] = useState([ ])
 
     const handleonchange = (e) =>{
@@ -24,7 +24,7 @@ function Todoform() {
             <h1>ToDo List!</h1>
             <div className='form-innerdiv'>
                 <form onSubmit={handleonsubmit} className='form-submit'>
-                    <input type='text' placeholder="Enter Note..." required  onChange={handleonchange}/>
+                    <input type='text' value={input} placeholder="Enter Note..."  required onChange={handleonchange}/>
                     <button><i className="fas fa-plus"/></button>
                 </form>
                 <Todolist todo={todo} setTodo={setTodo}/>

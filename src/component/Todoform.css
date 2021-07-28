@@ -19,7 +19,6 @@
     border-bottom: 1px solid rgba(255 ,255 ,255 ,0.2);
 }
 .form-submit input{
-    flex-grow: 1;
     border: none;
     color: #fff;
     background: rgba(255 ,255 ,255 ,0.1);
@@ -36,5 +35,5 @@
     cursor: pointer;
     color: #fff;
     /* border: 1px solid rgba(255, 255, 255, 0.3); */
-    transition: background 0.2s ease-out;
+    
 }
